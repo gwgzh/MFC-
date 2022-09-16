@@ -403,8 +403,6 @@ void CMy::On32772()
 void CMy::On32777()
 {
 	// TODO: 在此添加命令处理程序代码
-	CMenu* myMenu;
-	myMenu = GetMenu()->GetSubMenu(1);
 	//隐藏或显示照片
 	if (!PicControl.ShowWindow(SW_HIDE))
 	{
@@ -412,10 +410,7 @@ void CMy::On32777()
 		PicControl.ShowWindow(SW_SHOW);
 		//取消复选框
 	}
-	else
-	{
-		myMenu->CheckMenuItem(ID_32777, MF_BYCOMMAND|MF_CHECKED);
-	}
+	
 }
 
 
